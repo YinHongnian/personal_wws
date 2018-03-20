@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+	<head>
+	  <meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/product_details.css">
+		<link rel="stylesheet" href="css/footer.css">
+	</head>
+	<body>
+		<div class="main">
+		<!--1 页面头部-->
+			<header id="header"></header> 
+			<!--2 面包屑导航-->
+			<div id="bread-crumb">
+ 				<a href="products.html">产品</a> 
+ 				<span>&gt;</span> 
+ 				<a href="javascript:;"></a> 
+			</div>
+			<!--3 产品图文描述-->
+			<div id="product-details">
+				<!--3.1 左：产品图-->
+				<div id="preview">
+					<!--3.1.1 上：中图-->
+					<div id="mediumDiv">
+ 						<img src="img/product_details/md/md11.png"> 
+ 							<div id="mask"></div> 
+ 							<div id="superMask"></div> 
+					</div>
+					<!--3.1.2 侧：大图-->
+					<div id="largeDiv">
+					</div>
+					<!--3.1.3 下：小图-->
+					<div id="smallDiv">
+						<a class="backward disabled"></a>
+						<a class="forward"></a>
+						<span>
+							<ul id="icon_list">
+<!-- 								<li> -->
+<!-- 									<img src="${imgs[i].sm}" alt=""> -->
+<!-- 								</li> -->
+							</ul>
+						</span>
+					</div>
+				</div>
+				<!--3.2 右：产品文字信息描述-->
+				<div id="show-details">
+ 					<h1>智能云贴疼痛舒缓仪</h1> 
+ 					<p> 
+ 						<span id="score">0</span>/15&nbsp;&nbsp;&nbsp;&nbsp; 
+ 						用户评分 :  
+ 						<img src="" alt=""> 
+ 						来自<span id="score-user"></span>位用户
+ 					</p> 
+ 					<p> 
+ 						品牌 :<span class="brand"></span>&nbsp;&nbsp;&nbsp;&nbsp;种类 : <span id="assort"></span> 
+					</p>
+					<p>售价 :  <span id="price"></span></p>
+ 					<p class="cart"> 
+						数量 :   
+ 						<span class="reduce">-</span> 
+ 						<input type="text" value="1">
+ 						<span class="add">+</span> 
+ 					</p>
+ 					<div class="btns"> 
+ 						<a href="#" id="buy" class="btn">立即购买</a> 
+						<a href="#"  class="btn addCart">加入购物车</a>
+ 						<a href="#" id="trail" class="btn">申请试用</a> 
+					</div> 
+				</div>
+			</div>
+			<!--4 产品介绍-->
+			<div id="details">
+				<!--4.1 左:产品介绍-->
+				<div id="pdetails-tabs">
+					<!--4.1.1上:标签-->
+					<ul class="pdetails-tabs">
+						<li class="hover">产品介绍</li>
+						<li>参数</li>
+						<li>试用</li>
+						<li>试用报告</li>
+					</ul>
+					<!--4.1.2下:标签内容-->
+					<div class="pdetails-container">
+						<!--产品介绍-->
+						<div id="introduce" class="tab-content">
+							<div class="intro_img">
+ 							<!--<img src="img/product_details/introduce1.jpg" alt=""> -->
+							</div>
+ 							<p></p> 
+ 							<div class="collectShares"> 
+ 								<div class="pcollect lf"> 
+ 									<a href="#"> 
+ 										<img src="img/product_details/like.png" alt="" class="shock"> 
+ 										<span class="like-num"></span> 
+ 										<span class="tag">喜欢</span> 
+ 									</a> 
+ 									<a href="#"> 
+ 										<img src="img/product_details/gold-star.png" alt=""  class="shock"> 
+ 										<span class="collect-num"></span> 
+										<span class="tag">收藏</span> 
+ 									</a> 
+ 									<a href="#"> 
+										<img src="img/product_details/report.png" alt="" class="shock"> 
+ 										<span class="tag">举报</span> 
+ 									</a> 
+								</div> 
+ 								<div class="pshare rt"> 
+ 									分享到: 
+ 									<a href="" title="分享到新浪微博"> 
+ 										<img src="img/product_details/weibo.png" alt=""> 
+ 									</a> 
+ 									<a href="" title="分享到腾讯微博"> 
+ 										<img src="img/product_details/tengxun.png" alt=""> 
+									</a> 
+ 									<a href="" title="分享到人人网"> 
+ 										<img src="img/product_details/renren.png" alt=""> 
+ 									</a> 
+ 									<a href="" title="分享到豆瓣"> 
+ 										<img src="img/product_details/douban.png" alt=""> 
+ 									</a> 
+ 									<a href="" title="分享到QQ空间"> 
+ 										<img src="img/product_details/kongjian.png" alt=""> 
+ 									</a> 
+ 									<a href="" title="分享到微信"> 
+ 										<img src="img/product_details/weixin.png" alt=""> 
+ 									</a> 
+ 								</div> 
+ 							</div> 
+ 							<div class="comments"> 
+ 								<h4 class="title-item"> 
+ 									<span class="green-block"></span> 
+ 									参与评论 
+ 								</h4> 
+ 								<div class="comment-item"> 
+ 									外观设计： 
+ 									<i></i> 
+ 									<i></i> 
+ 									<i></i> 
+ 									<i></i> 
+ 									<i></i> 
+ 									&nbsp;&nbsp;
+ 									<span id="score1"></span>/5
+ 								</div> 
+ 								<div class="comment-item">
+ 									产品性能：
+ 									<i></i> 
+ 									<i></i> 
+ 									<i></i> 
+ 									<i></i> 
+ 									<i></i> 
+ 									&nbsp;&nbsp;
+ 									<span id="score2"></span>/5 
+ 								</div> 
+ 								<div class="comment-item"> 
+ 									综合评价： 
+ 									<i></i> 
+ 									<i></i> 
+ 									<i></i> 
+ 									<i></i> 
+ 									<i></i>
+ 									&nbsp;&nbsp;
+ 									<span id="score3"></span>/5 
+ 								</div> 
+ 								<div class="comment-item"> 
+									产品推荐:  
+									<input type="radio" name="isRecommend"  value="1" checked>推荐 
+									<input type="radio" name="isRecommend"  value="2">一般 
+									<input type="radio" name="isRecommend" value="0">不推荐 
+ 								</div>
+								<a href="#" class="btn">提交</a>
+ 							</div> 
+						</div>
+						<!--参数-->
+						<div id="parameter" style="display:none" >
+							<img src="img/product_details/parameter/p110.jpg" alt="">
+						</div>
+						<!--试用-->
+						<div id="trail-details" class="tab-content" style="display:none">
+							<!--试用流程-->
+							<h4 class="title-item">
+								<span class="green-block"></span>
+								试用流程
+							</h4>
+							<div class="trail-proccess">
+								<div class="proccess">
+									<img src="" >
+									<h4>产品申请</h4>
+									<p>点击立即申请按钮, 即可参加活动</p>
+								</div>
+								<div class="proccess">
+									<img src="img/product_details/notice.png" alt="">
+									<h4>公布名单</h4>
+									<p>公布申请成功名单,相关用户需及时确认</p>
+								</div>
+								<div class="proccess">
+									<img src="img/product_details/get.png" alt="">
+									<h4>收货体验</h4>
+									<p>名单确认后寄送产品,供用户体验</p>
+								</div>
+								<div class="proccess">
+									<img src="img/product_details/submit_report.png" alt="">
+									<h4>提交报告</h4>
+									<p>申请成功者需在规定时限内提交试用报告</p>
+								</div>
+								<div class="proccess">
+									<img src="img/product_details/over.png" alt="">
+									<h4>已结束</h4>
+									<p>分享发布体验报告, 活动结束</p>
+								</div>
+							</div>
+							<!--申请名单-->
+							<h4 class="title-item">
+								<span class="green-block"></span>
+								申请名单
+							</h4>
+							<div class="userList">
+<!-- 								<div class="user"> -->
+<!-- 									<div></div> -->
+<!-- 									<p>ting</p> -->
+<!-- 								</div> -->
+							</div>
+							<!--试用名单-->
+							<h4 class="title-item">
+								<span class="green-block"></span>
+								试用名单
+							</h4>
+							<div class="successList">
+								<p>经过玩物君在后台认真查看了玩家们的试用申请计划后,彻夜未眠了好几天,决定本次试用名单如下: </p>
+								<div class="names clear">
+									<ul class="successName lf">
+										<li>辛末</li>
+										<li>辛末</li>
+										<li>辛末</li>
+										<li>辛末</li>
+										<li>辛末</li>
+									</ul>
+									<ul class="successPhone rt">
+										<li>180****0849</li>
+										<li>180****0849</li>
+										<li>180****0849</li>
+										<li>180****0849</li>
+										<li>180****0849</li>
+									</ul>
+								</div>
+								<p>请保持手机畅通，收到通知短信后于 2017/09/07前联系玩物说管理员（qq 3369128778），逾期不联系即视为自动放弃试用</p>
+							</div>
+						</div>
+						<!--试用报告-->
+						<div id="trail-report" style="display:none">
+<!-- 							<div class="report-desc"> -->
+<!-- 								<div class="report-img"> -->
+<!-- 									<a href="#"><img src="img/product_details/trail-report.png"></a> -->
+<!-- 								</div> -->
+<!-- 								<a href="#"> -->
+<!-- 									<h3>随身的小按摩师：智能云贴疼痛舒缓仪</h3> -->
+<!-- 								</a> -->
+<!-- 								<p> -->
+<!-- 									<a href="#">大头娃娃</a> -->
+<!-- 									&nbsp;&nbsp;·&nbsp;&nbsp; -->
+<!-- 									<span class="write-time">2017/11/10 15:12:27</span> -->
+<!-- 									&nbsp;&nbsp;·&nbsp;&nbsp; -->
+<!-- 									发布 -->
+<!-- 								</p> -->
+<!-- 							</div> -->
+						</div>
+					</div>
+				</div>			
+				<!--5 右:其他信息-->
+				<div id="ad">
+					<div class="company">
+						<h4></h4> 
+ 						<div class="cintro"> 
+ 						</div> 
+					</div>
+					<div id="guess">	
+						<h4>猜你喜欢</h4>
+						<div class="container">
+							<!--产品1-->
+							<div>
+								<div class="show-frame">
+									<a href="">
+										<img src="img/product_details/gproduct.png" alt="">
+									</a>
+								</div>
+								<a href="" class="ptitle">欧瑞博智能排插</a>
+							</div>
+							<!--产品2-->
+							<div>
+								<div class="show-frame">
+									<a href="">
+										<img src="img/product_details/gproduct.png" alt="">
+									</a>
+								</div>
+								<a href="" class="ptitle">欧瑞博智能排插</a>
+							</div>
+							<!--产品3-->
+							<div>
+								<div class="show-frame">
+									<a href="">
+										<img src="img/product_details/gproduct.png" alt="">
+									</a>
+								</div>
+								<a href="" class="ptitle">欧瑞博智能排插</a>
+							</div>
+							<!--产品4-->
+							<div>
+								<div class="show-frame">
+									<a href="">
+										<img src="img/product_details/gproduct.png" alt="">
+									</a>
+								</div>
+								<a href="" class="ptitle">欧瑞博智能排插</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!--1 页面底部-->
+			<footer id="footer"></footer> 
+		</div>
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/header.js"></script>
+		<script src="js/product_details.js"></script>
+		<script src="js/footer.js"></script>
+	</body>
+</html>

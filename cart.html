@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+	<head>
+	  <meta charset="utf-8">
+	  <title></title>
+	  <link rel="stylesheet" href="css/base.css">
+	   <link rel="stylesheet" href="css/header.css">
+	  <link rel="stylesheet" href="css/cart.css">
+	  <link rel="stylesheet" href="css/footer.css">
+	</head>
+	<body>
+		<div class="main">
+			 <!--1 页面头部-->
+			<hearder id="header"></hearder> 
+			<!-- 2 购物车 -->
+			<div class="shopping-cart">
+				<!-- 2.1 上方:title+配送至 -->
+				<div class="top">
+					<h3>购物车</h3>
+					<p>
+						配送至 : 
+						<select name="address" id="address">
+							<!-- <option value="1">深圳宝安西乡街道天虹商场二楼</option>
+							<option value="2">深圳宝安西乡街道天虹商场二楼</option>
+							<option value="3">深圳宝安西乡街道天虹商场二楼</option> -->
+						</select>
+					</p>
+				</div>
+				<!-- 2.2 购物车列表 -->
+				<div class="container">
+					<div class="title">
+						<input type="checkbox" name="allCheck" class="allCheck">全选	
+						<div class="product-top">商品</div>
+						<div class="price">单价(元)</div>
+						<div class="count">数量</div>
+						<div class="total">小计</div>
+						<div class="del">操作</div>
+					</div>
+					<div class="content">
+						<!-- <div class="cart-item">
+							<input type="checkbox" name="check" id="check">	
+							<a href="product_details?lid=1">
+								<img src="img/carts/sm11.png" alt="">
+							</a>
+							<a href="product_details?lid=1">
+								<span class="ptitle">智能云贴疼痛舒缓仪</span>
+							</a>
+							<span class="price">¥399.00</span>
+							<div class="count">
+								<span class="reduce">-</span> 
+								<input type="text" value="1">
+								<span class="add">+</span> 
+							</div>
+							<span class="total">¥399.00</span>
+							<a href="#" class="del">删除</a>
+						</div> -->
+					</div>
+					<div class="bottom">
+						<input type="checkbox" name="allCheck" class="allCheck">全选	
+						<a href="javascript:;" class="delChk">删除选中的商品</a>
+						<div class="colPrice">
+							已选择<span class="colCount"></span>件商品&nbsp;&nbsp;&nbsp;&nbsp;
+							总价: <span class="sumPrice"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="javascript:;">去结算</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--3 页面页脚-->
+			<footer id="footer"></footer>
+		</div>
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/header.js"></script>
+		<script src="js/cart.js"></script>
+		<script src="js/footer.js"></script>
+	</body>
+	  
+</html>

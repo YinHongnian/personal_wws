@@ -1,0 +1,45 @@
+﻿/*main的背景颜色*/
+#footer .main{height:380px;}
+.topFoot{
+    background:#E5E5E5;
+    height:317px;
+    font-size:14px;
+}
+.topFoot p,.topFoot a{color:#888;}
+.leftFoot{
+  margin-left:70px; 
+  padding-top:40px; 
+  width:320px;
+}
+.partners{
+  width:842px; 
+  margin:10px auto;
+  padding:40px 70px 0 30px;
+  border-left:1px dashed #ccc;
+}
+.partners>span{
+    color:#666;
+    font-size:16px;
+}
+.partnerLogo{
+    position:relative;
+}
+.partnerLogo .secoundPlogo>img{
+    height:70px;
+}
+.partnerLogo .secoundPlogo{
+    position: absolute;
+    bottom:25px;
+    left:150px;
+}
+.partnerLogo .thirdPlogo{
+    position:absolute;
+    left:270px;
+}
+.bottomFoot{
+    height:63px;
+    background:#333;
+    color:#777;
+    text-align:center;
+    line-height:63px;
+}

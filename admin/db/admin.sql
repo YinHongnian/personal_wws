@@ -1,0 +1,53 @@
+use wws;
+DROP TABLE IF EXISTS  t_user ;
+DROP TABLE IF EXISTS  t_role ;
+DROP TABLE  IF EXISTS  t_user_role ;
+DROP TABLE  IF EXISTS  t_module ;
+DROP TABLE  IF EXISTS  t_acl ;
+/*创建管理员表格*/
+CREATE TABLE t_user(
+	uid INT PRIMARY KEY AUTO_INCREMENT,
+	uname VARCHAR(25) NOT NULL DEFAULT '',
+	upwd VARCHAR(64) NOT NULL DEFAULT  ''
+);
+INSERT INTO t_user VALUES
+(1,'tom',md5('123')),
+(2,'kk',md5('123'));
+/*创建角色列表*/
+CREATE TABLE t_role(
+	rid INT PRIMARY KEY AUTO_INCREMENT,
+	rname VARCHAR(50) NOT NULL DEFAULT ''
+);
+INSERT INTO t_role VALUES
+(1,'超级管理员'),
+(2,'商品管理员'),
+(3,'文章管理员'),
+(4,'普通管理员');
+/*创建人员-角色关系表*/
+CREATE TABLE t_user_role(
+	urid INT PRIMARY KEY AUTO_INCREMENT,
+	rid INT NOT NULL DEFAULT 0,
+	uid INT NOT NULL DEFAULT 0
+);
+INSERT INTO t_user_role VALUES
+(null,1,3);
+/*创建模块表*/
+CREATE TABLE t_module(
+	mid INT PRIMARY KEY AUTO_INCREMENT,
+	mname VARCHAR(100) NOT NULL DEFAULT '',
+	pid INT NOT NULL DEFAULT 0,
+	sn VARCHAR(100) NOT NULL DEFAULT '',
+	`level` INT NOT NULL DEFAULT 0
+);
+INSERT INTO t_module VALUES(null,'总公司',0,'1',1);
+/*创建角色模块关系表*/
+CREATE TABLE t_acl(
+	aid INT PRIMARY KEY AUTO_INCREMENT,
+	mid INT NOT NULL DEFAULT 0,
+	rid INT NOT NULL DEFAULT 0,
+	c ENUM('1','0') NOT NULL DEFAULT '0',
+	r ENUM('1','0') NOT NULL DEFAULT '0',
+	u ENUM('1','0') NOT NULL DEFAULT '0',
+	d ENUM('1','0') NOT NULL DEFAULT '0'
+);
+INSERT INTO t_acl VALUES(null,1,1,'1','1','1','1');

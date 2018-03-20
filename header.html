@@ -1,0 +1,97 @@
+	 <div class="main">
+       <div class="container clear">
+        <!--左边:logo图标:左浮动,点击时新开窗口返回首页-->
+            <a href="#" class="logoShow lf" target="_blank">
+            <img src="img/header/logo.png">
+            </a>
+            <!--中间导航-->
+            <ul id="nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="products.html">产品</a></li>
+                <li><a href="news.html">资讯</a></li>
+            </ul> 
+            <!--右侧：搜索框+搜索图片--> 
+            <div id="inputBox">
+                <input type="text" placeholder="输入关键词搜索" id="txtSearch">
+                <img src="img/header/search.png" data-trigger="search">
+                <ul id="shelper"></ul>
+            </div>
+            <!--右侧：未登录时，注册，登录列表--> 
+            <div id="account" class="rt">
+                <div class="accountContent">
+                    <img src="img/header/avatar-pic.png">
+                    &nbsp;账号&nbsp;
+                    <img src="img/header/down_arrow.png">
+                </div>
+                <div class="accountMenu">
+                    <i></i>
+                    <div>
+                        <div class="log">登录</div>
+                        <div class="reg">注册</div>
+                    </div>  
+                </div> 
+            </div>
+            <div class="lr-user-modal">
+				<div class="lr-user-modal-container">
+					<ul class="lr-switch clear">
+						<li  class="log-tab">用户登录</li>
+						<li class="reg-tab">注册新用户</li>
+					</ul>
+                </div>
+				<div id="lr-login">
+					<form class="lr-login-form">
+					   用户名：<input type="text" id="luname" placeholder="请填写您的用户名">
+                       <br><br>
+					   密&nbsp;&nbsp;&nbsp;码：<input type="password" id="lupwd" placeholder="密码">
+                       <br><br>
+                       <div id="yzm" style="display:none">
+                            验证码：<input type="text" class="yzm" placeholder="验证码">
+                            <img src="data/routes/users/code_gg.php" id="setYzm" title="看不清点击换一张">
+                            <br>
+                            <span class="yzm_show" style="color:red"></span>
+                        </div>
+                       <a href="#" id="login-btn" class="btn">登录</a>
+                    </form>
+					<a href="#" class="otherLogin">腾讯QQ登录</a>
+                    <a href="#" class="otherLogin">新浪微博登录</a>
+               </div>
+				<div id="lr-register">
+					<form class="lr-register-form">
+                        <i>用户名</i>
+                        <input type="text" id="runame" placeholder="请填写您的用户名">
+                       <span class="uname_show">2-8位汉字、字母、数字下划线</span>
+                       <br><br>
+                       <i>密码</i>
+                       <input type="password" id="rupwd" placeholder="请输入您的密码">
+                       <span class="upwd_show">6-20位字母、数字下划线</span> 
+                       <br><br>
+                       <i>确认密码</i>
+                       <input type="password" id="cpwd" placeholder="请再次输入您的密码">
+                       <span class="cpwd_show"></span>
+                       <br><br>
+                       <i>邮箱</i>
+                       <input type="email" id="email" placeholder="请输入您的邮箱">
+                       <!-- <span class="email_show"></span> -->
+                       <br><br>
+					   <input type="checkbox" id="agree">同意<a href="">《玩物说用户协议》</a>
+					   <a href="#" id="register-btn" class="btn" >立即注册</a>
+					</form>
+               </div>
+            </div>
+            <!--右侧2：用户名、注销列表-->
+            <div id="welcomeList">
+				<div href="javascript:;" class="mywelcome">
+                    Welcome 
+                    <span id="uname"></span>
+                    <div class="my">
+                        <i></i>
+                        <a href="#">我的试用</a>
+                        <a href="#">我的订单</a>
+                        <a href="cart.html">我的购物车</a>
+                    </div> 
+                </div>
+                <b>|</b>
+                <a id="logout" href="javascript:;">注销</a> 
+            </div>
+        </div>
+    </div>

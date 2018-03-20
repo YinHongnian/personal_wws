@@ -1,0 +1,16 @@
+.side-nav{
+    background-color:#21AA8E;
+    color:#fff;
+}
+.top-header{
+    padding-bottom:30px;
+}
+.top-header img{
+    display:inline-block;
+    vertical-align:Baseline;
+}
+.tab-down{
+    position:absolute;
+    right:10%;
+    top:33%;
+}

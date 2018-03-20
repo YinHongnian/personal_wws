@@ -1,0 +1,212 @@
+﻿#header{height:70px;}
+/***************分类导航*******************/
+#ptabs>.tabs{
+	width:100%;
+	height:50px;
+	margin:0 auto;
+	background:#333;
+}
+.tabs>li{
+	float:left;
+	width:100px;
+	line-height:50px;
+	color:#eee;
+	font-size:14px;
+	padding-left:45px;
+	cursor:pointer;
+	background:url(../img/products/tab1.png) no-repeat 15% center;
+}
+.tabs>li:hover{
+	background:#000 url(../img/products/tab2.png) no-repeat 15% center;
+}
+.tabs>li:first-child{
+	margin-left:100px;
+}
+#ptabs>.container{
+	height:70px;
+	width:100%;
+	background:#F7F7F7;
+	position:relative;
+	display:none;
+}
+.container>i{
+	border:8px solid transparent;
+	border-bottom-color:#F7F7F7;
+	position:absolute;
+	left:120px;
+	top:-15px;
+	transition:all .3s linear;
+}
+.container .tag-content>li{
+	float:left;
+	padding:0 15px;
+	line-height:70px;
+	color:#333;
+	font-size:14px;
+	cursor:pointer;
+}
+.tag-content>li:first-child{
+	margin-left:100px;
+}
+/***************产品排序显示*******************/
+#psort{
+	background:#fff;
+	height:50px;
+	line-height:50px;
+	padding:0 15px;
+	border-top:1px solid #E6E6E6;
+	border-bottom:1px solid #E6E6E6;
+}
+#psort .allproduct{
+	float:left;
+	color:#21AA8E;
+	font-size:20px;
+	margin-left:100px;
+	line-height:50px;
+}
+#psort ul{
+	display:inline-block;
+	margin-left:50px;
+}
+#psort li{
+	float:left;
+	padding: 0 20px;
+	color:#888;
+	font-size:14px;
+	text-align:center;
+	cursor: pointer;
+}
+#psort li:nth-child(2n+1):hover,#psort li.hover{
+	color:#21AA8E;
+	border-bottom:2px solid #21AA8E;
+}
+#psort .ptotal{
+	float:right;
+	margin-right:100px;
+	color:#888;
+}
+#psort .pnum{
+	color:#21AA8E;
+}
+
+/***************产品列表*******************/
+#productList{
+	width:1130px;
+	height:676px;
+	margin:50px auto;
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	box-sizing:border-box;
+}
+#productList>.product{
+	width:250.5px;
+	height:300px;
+	border:1px solid #E6E6E6;
+	position:relative;
+}
+.product>.pimg{
+	width:250.5px;
+	height:150px;
+	overflow:hidden;
+}
+.pimg img{
+	height:150px;
+	transition:all .3s linear;
+}
+.pimg img:hover{
+	transform:scale(1.1);
+}
+.pdesc h3{
+	font-weight:normal;
+	font-size:18px;
+	text-align:center;
+	margin:0 10px;
+	padding:15px 0;
+	border-bottom:1px solid #E6E6E6;
+}
+.pdesc>.pdata{
+	padding:10px;
+	font-size:14px;
+	color:#999;
+}
+.pdesc>div{
+	box-sizing: border-box;
+	width:250.5px;
+	position:absolute;
+	bottom:5px;
+	padding:10px;
+}
+.pdesc .reduce,.pdesc .add{
+	display:inline-block;
+	width:30px;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	background:#21AA8E;
+	border-radius:3px;
+	color:#fff;
+	cursor: pointer;
+}
+.pdesc input{
+	width:30px;
+	height:30px;
+	box-sizing: border-box;
+	text-align:center;
+}
+.pdesc .addCart{
+	height:30px;
+	line-height: 30px;
+	padding:0 5px;
+	float:right;
+	background:#21AA8E;
+	color:#fff;
+	border-radius:3px;
+	font-size: 14px;
+}
+/***************页码*******************/
+.ppage{
+	text-align:center;
+	margin-bottom:50px;
+}
+.ppage>a{
+	display:inline-block;
+	padding:7px 15px;
+	margin:1px;
+	border:1px solid #ccc;
+	border-radius:3px;
+	color:#999;
+}
+.ppage>a:hover,.ppage>a.current{
+	background:#21AA8E;
+	color:#fff;
+	text-decoration:none;
+}
+
+/***************侧边回到顶部*******************/
+.toTop{
+	height:50px;
+	width:54px;
+	overflow:hidden;
+	position:absolute;
+	right:40px;
+	bottom:-417px;
+}
+.top{
+	background:#333;
+	color:#fff;
+	height:50px;
+	width:54px;
+	font-size:14px;
+	text-align:center;
+	line-height:50px;
+}
+.top-container{
+	display:block;
+	position:relative;
+	transition:all .5s linear;
+}
+.top-container:hover{
+	top:-50px;
+	text-decoration:none;
+}

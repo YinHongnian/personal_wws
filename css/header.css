@@ -1,0 +1,269 @@
+﻿/*主体背景颜色#F0F0F0,高度*/
+.main{background: #21AA8E;height:70px;}
+.container{
+    width:90%;
+    margin:0 auto;
+    position: relative;
+}
+
+/*左边：图片上下居中对齐，左外边距10px，左外边距40px，图片大小缩小*/
+a.logoShow{line-height:70px;}
+a.logoShow>img{margin-left:15px;}
+
+/*页面主导航：宽度，弹性布局，两端对齐,不自动换行*/
+#nav{
+    height:70px;
+    position: absolute;
+    left:180px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+}
+/*li里字体颜色*/
+#nav li{
+    width:80px;
+}
+#nav li:first-child{
+    background:url(../img/header/down_arrow.png) no-repeat 90% 55% ;
+}
+#nav li a{
+    color:#eee;
+    font-size: 18px;
+    padding-left:20px;
+    line-height: 70px;
+}
+/*导航悬停文本颜色变为白色*/
+#nav li a:hover{
+    color:#fff;
+    text-decoration:none;
+}
+
+/*搜索框整体：行内块，行高，绝对定位，右边偏移*/
+#inputBox{
+    display: inline-block;  
+    line-height: 70px;
+    position: absolute;
+    right: 255px;
+}
+
+/*搜索框：边框及倒角，无轮廓，宽度，高度，左内边距*/
+#inputBox>input{
+    border-radius: 3px;
+    outline:none;
+    border:1px solid #ccc;
+    width:200px;
+    height:25px;
+    padding-left:8px;
+}
+/*搜索框内图片：绝对定位，右，鼠标变小手*/
+#inputBox>img{
+    position: absolute;
+    right:1px;
+    top:25px;
+    cursor: pointer;
+}
+/*搜索框悬停时：边框模糊*/
+#inputBox>input:hover{
+    box-shadow:1px 1px 1px rgb(185, 226, 218);
+}
+#inputBox>#shelper{
+    width:240px;
+    z-index:10;
+    background: #fff;
+    position:absolute;
+    top:50px;
+    border:1px solid #eee;;
+    display:none;
+}
+#shelper>li{
+    font-size:12px;
+    color:#333;
+    height:20px;
+    margin-top:5px;
+    padding-left:10px;
+    line-height: 20px;
+}
+#shelper>li.focus{
+    background:#21AA8E;
+    opacity:0.3;
+    color:#fff;
+}
+/*登录注册*/
+#account{
+    position:relative;
+    top:15px;
+    right:30px;
+    font-size:16px;
+    color:#eee;
+	cursor:pointer;
+	z-index:5;
+}
+#account>.accountContent>img:first-child{
+    width:40px;
+}
+#account>.accountMenu{
+    position:absolute;  
+	color:#333;
+	box-shadow:1px 1px 2px #e6e6e6;
+	display:none;
+}
+#account>.accountMenu i{
+    border:10px solid transparent;
+    border-bottom-color:#fff;
+    height:0px;
+    position:absolute;
+    left:15px;
+    top:-11px;
+    z-index:10;
+}
+#account>.accountMenu>div:last-child{
+    border:1px solid #e6e6e6;
+    width:150px;
+    height:80px;
+    position:absolute;
+    top:8px;
+    background:#fff;
+    border-radius:4px;
+}
+#account>.accountMenu .log{
+    background:url(../img/header/login.png) no-repeat center left;
+    padding-left:25px;
+    position: absolute;
+    top:15px;
+    left:10px;
+	cursor:pointer;
+}
+#account>.accountMenu .reg{
+    background:url(../img/header/register.png) no-repeat center left;
+    padding-left:25px;
+    position: absolute;
+    top:45px;
+    left:10px;
+	cursor:pointer;
+}
+#account>.accountMenu .log:hover,#account>.accountMenu .reg:hover{
+	color:#21AA8E;
+}
+/*登录注册弹框*/
+.lr-user-modal{
+	position:absolute;
+	left:200px;
+	top:200px;
+    width:600px;
+    height:388px;
+	border:1px solid #3B3B3B;
+	border-radius:5px;
+	box-shadow:6px 6px 5px #888888;
+	z-index:10;
+	display:none;
+	background:#fff;
+	transition:all .3s linear;
+}
+/*登录注册标签*/
+.lr-user-modal-container{
+    margin:20px 130px;
+}
+.lr-switch>li{
+	float:left;
+	width:165px;
+    height:50px;
+    line-height:50px;
+	text-align:center;
+    font-size:20px;
+    background: #F2F2F2;
+    cursor:pointer;
+}
+.lr-switch .active{
+    background: #21AA8E;
+    color:#eee;
+    box-shadow:2px 2px 4px #888888;
+}
+/*登录注册的内容框*/
+#lr-login{
+    margin:20px 140px;
+}
+#lr-login input,#lr-register input{
+    padding:5px 10px;
+}
+#lr-login span,#lr-register span{
+    color:#aaa;
+    font-size:12px;
+}
+.yzm{width:50px;}
+
+a.btn{
+    display:block;
+    width: 130px;
+    height:35px;
+    text-align:center;
+    line-height:35px;
+    border-radius:3px;
+    margin:20px auto;
+    background:#21AA8E;
+    color:#eee;
+}
+#lr-login .otherLogin{
+    display:inline-block;
+    height:40px;
+    width:100px;
+    line-height: 40px; 
+    font-size:14px;
+    text-decoration: underline;
+}
+
+/*注册*/
+#lr-register{
+    margin:20px 80px;
+}
+.lr-register-form>i{
+    text-align:right;
+    font-style:normal;
+    display:inline-block;
+    width:64px;
+}
+
+/*用户名注销列表*/
+#welcomeList{
+    position: absolute;
+    top:35px;
+    right:35px;
+    font-size:14px;
+	display:none;
+}
+#uname{
+	font-weight:bold;
+}
+#welcomeList>a,#welcomeList>b,div.mywelcome{
+    color:#eee;
+}
+.mywelcome{
+	display:inline-block;
+}
+#welcomeList div.my{
+	z-index:10;
+    position:absolute;  
+	top:28px;
+	color:#333;
+	border:1px solid #dbdbdb;
+	background:#fff;
+	box-shadow:1px 1px 2px #e6e6e6;
+	width:120px;
+	border-radius:3px;
+	padding:5px 0;
+	display:none;
+}
+#welcomeList div.my>i{
+    border:10px solid transparent;
+    border-bottom-color:#fff;
+    height:0px;
+    position:absolute;
+    left:15px;
+    top:-20px;
+    z-index:10;
+}
+#welcomeList div.my>a{
+	display:block;
+	margin:5px 10px;
+}
+

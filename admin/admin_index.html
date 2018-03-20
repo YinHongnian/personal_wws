@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width,initial-scale=1">
+	  <meta http-equiv="x-ua-compatible" content="IE-edge">
+	  <title></title>
+		<link rel="stylesheet" href="css/base.css">
+	  <link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/admin_index.css">
+	  <!--[if it IE 9]-->
+		<script src="js/html5shiv.min.js"></script>
+		<script src="js/respond.min.js"></script>
+		<!--End If-->
+	</head>
+  <body>
+	<div class="container">
+		<!--一行两列-->
+		<div class="row">
+			<!--第一列为侧边导航列-->
+			<nav class="navbar navbar-default side-nav col-md-3" role="navigation">
+			<div class="nav navbar-header top-header">
+				<a href="admin_index.html" class="navbar-brand">
+					<img src="img/index/logo.png" alt="玩物说">&nbsp;&nbsp;&nbsp;&nbsp;后台管理
+				</a>
+			</div>
+			<div class="clearfix"></div>
+
+			<div class="nav navbar-nav panel-group col-xs-12" id="accordion" role="tablist" aria-multiselectable="true" >
+				<ul class="nav">
+					<li class="panel panel-default">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+						   aria-controls="collapseOne">
+							商品管理 <span class="glyphicon glyphicon-chevron-down tab-down"></span>
+						</a>
+						<ul class="nav panel-body panel-collapse collapse" id="collapseOne" role="productsManage"
+							aria-labelledby="headingOne">
+							<li><a href="product_list.html">商品列表</a></li>
+							<li><a href="product_search.html">多条件搜索</a></li>
+							<li><a href="product_add.html">添加商品</a></li>
+						</ul>
+					</li>
+					<li class="panel panel-default">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true"
+						aria-controls="collapseTwo">
+							用户管理 <span class="glyphicon glyphicon-chevron-down tab-down"></span>
+						</a>
+						<ul class="nav panel-body panel-collapse collapse" id="collapseTwo"
+							role="usersManage" aria-labelledby="headingTwo">
+							<li><a href="user_list.html">用户列表</a></li>
+							<li><a href="user_search.html">用户检索</a></li>
+						</ul>
+					</li>
+					<li class="panel panel-default">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true"
+						   aria-controls="collapseThree">
+							订单管理 <span class="glyphicon glyphicon-chevron-down tab-down"></span>
+						</a>
+						<ul class="nav panel-body panel-collapse collapse" id="collapseThree"
+							role="ordersManage" aria-labelledby="headingThree">
+							<li><a href="order_list.html">订单列表</a></li>
+							<li><a href="order_search.html">搜素订单</a></li>
+						</ul>
+					</li>
+					<li class="panel panel-default">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true"
+						   aria-controls="collapseFour">
+							文章管理 <span class="glyphicon glyphicon-chevron-down tab-down"></span>
+						</a>
+						<ul class="nav panel-body panel-collapse collapse" id="collapseFour"
+							role="airticlesManage" aria-labelledby="headingFour">
+							<li><a href="article_list.html">文章列表</a></li>
+							<li><a href="article_search.html">文章检索</a></li>
+						</ul>
+					</li>
+					<li class="panel panel-default">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true"
+						   aria-controls="collapseFive">
+							首页管理 <span class="glyphicon glyphicon-chevron-down tab-down"></span>
+						</a>
+						<ul class="nav panel-body panel-collapse collapse" id="collapseFive"
+							role="airticlesManage" aria-labelledby="headingFive">
+							<li><a href="article_list.html">轮播广告</a></li>
+							<li><a href="article_search.html">试用报告推荐</a></li>
+							<li><a href="article_search.html">新闻推荐</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+			<!--第二列为内容类,又分为两行-->
+			<div class="col-md-9">
+				<!--第一行,顶部导航条-->
+				<div class="row">
+					<nav class="navbar navbar-default collapse navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li>
+								<a><span class="glyphicon glyphicon-align-justify"></span></a>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<span class="glyphicon glyphicon-comment"></span>
+								<span class="badge">6</span>
+							</li>
+							<li class="dropdown">
+
+								<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<span class="glyphicon glyphicon-user"></span>
+									超级管理员
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+									<li><a href="#">基本信息</a></li>
+									<li><a href="#">用户设置</a></li>
+									<li><a href="#">使用说明</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#">退出登录</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!--第二行,下方内容主体-->
+				<div class="row"></div>
+			</div>
+		</div>
+	</div>
+  </body>
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/bootstrap.js"></script>
+	<script src="js/admin_index.js"></script>
+</html>
